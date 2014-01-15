@@ -1,0 +1,71 @@
+html {
+	font-size: 12px;
+	font-family: verdana;
+}
+
+#atributosbar {
+	background-color: #bbb;
+	color: #222;
+	height: 10%;
+	padding: 12;
+	border-style:solid;
+	border-width: 1;
+	font-size: 12;
+	background: url("images/wood_repeatable.jpg");
+}
+
+#historiabar {
+	height: 500px;
+	background-color: #ccc;
+	color: #222;
+	height: 80%;
+	border-style: dashed;
+	border-width: 1;
+}
+
+#historia {
+	height: 100%;
+	width: 70%;
+	border: 0;
+	user-select: none;
+
+}
+
+#chatbar {
+	background-color: #ddd;
+	color: #fff;
+	padding: 10 10 0 10;
+	height: 5%;
+	border-style:solid;
+	border-color: #000;
+	border-width: 1;
+}
+
+#chat {
+	font-family: arial;
+	border-style: dotted;
+	border-width: 2px;
+	border-color: #fff;
+	padding: 5px;
+	width: 100%;
+}
+
+#archer {
+	background: url("images/archer.gif");
+	background-size: 90 80;
+	background-color: white;
+	border-width: 2;
+	border-color: #000;
+	border-style: solid;
+	border-radius: 20;
+	float: left;
+	margin-right: 25;
+}
+
+.textdisabled {
+	color: #ccc;
+}
+
+.textenabled {
+	color: #333;
+}
