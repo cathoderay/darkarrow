@@ -9,7 +9,7 @@ function copy(text) {
 
 $(document).ready(function() {
 
-    $( "#dialog-modal" ).dialog({height: 200, modal: true});
+    $( "#dialog-modal" ).dialog({height: 240, modal: true, buttons: {'ok': function() {$(this).dialog("close");}}});
 
  	default_chat_value = "Digite sua ação aqui!";
  	$("#chat").val(default_chat_value);
