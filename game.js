@@ -52,10 +52,31 @@ $(document).ready(function() {
 	 		};
 
 	 		if (chat.toLowerCase().indexOf("ajuda") != -1) {
-	 			resposta = "\nEste jogo é baseado em comandos de texto.\nComandos básicos:\n\t\"ajuda\": Mostra essa ajuda.\n\t\"créditos\": Exibe dados dos criadores deste jogo.\n\t\"comandos\": Lista todos os comandos disponíveis no jogo.";
-
-	 			//"observar\": Permite que você saiba o que o seu personagem consegue visualizar.";
+	 			resposta = "\nEste jogo é baseado em comandos de texto.\n" + 
+	 					   "Comandos básicos:\n" + 
+	 					   	"  \"ajuda\": Mostra essa ajuda.\n" +
+	 					   	"  \"créditos\": Exibe dados dos criadores deste jogo.\n" +
+	 					   	"  \"comandos\": Lista todos os comandos disponíveis no jogo.";
+ 				//
 	 		};
+
+	 		if (chat.toLowerCase().indexOf("comandos") != -1) {
+	 			resposta = "\n  \"ajuda\": Mostra comandos básicos.\n" +
+	 					   	"  \"créditos\": Exibe dados dos criadores deste jogo.\n" +
+	 					   	"  \"comandos\": Lista todos os comandos disponíveis no jogo.\n" +
+	 					   	"  \"observar\": Permite que você saiba o que o seu personagem consegue visualizar.";
+	 		};
+
+
+	 		if (chat.toLowerCase().indexOf("observar") != -1) {
+	 			resposta = "\nNão vejo nada.";
+	 		}
+
+
+	 		if (resposta == "") {
+	 			resposta = "\nComando inválido. Digite \"comandos\" para comandos disponíveis."
+
+	 			};
 
 	 		//captura o conteúdo da história
 	 		historia = $("#historia").val();
@@ -67,6 +88,8 @@ $(document).ready(function() {
 	 		$("#chat").val("");
 	 	}
 	}
+
+
 });
 
 
