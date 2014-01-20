@@ -1,5 +1,9 @@
-t1="Bem-vindo ao jogo DarkArrow!\n\nAqui o seu objetivo é salvar a cidade de uma iminente ameaça de destruição.";
-
+t1="Bem-vindo à Ilha de Log!\n" +
+	"Esta ilha sofre de escassez de recursos. Falta de comida e água potável são os principais motivadores de um caos generalizado." +
+	"Casas são saqueadas, idosos e crianças são assassinados, portas e janelas são reforçadas com pedaços de madeiras." +
+	"\n\nSeu nome é Gary e você tem um casal de filhos pequenos: Kin e Jany." +
+	" Seu objetivo é protegê-los, até você ter os materiais necessários para construir um barco e tirá-los da ilha."
+	;
 
 function copy(text) {
 	historia = $("#historia").val();
@@ -9,7 +13,7 @@ function copy(text) {
 
 $(document).ready(function() {
 
-    $( "#dialog-modal" ).dialog({height: 240, modal: true, buttons: {'ok': function() {$(this).dialog("close");}}});
+    $( "#dialog-modal" ).dialog({height: 250, modal: true, buttons: {'ok': function() {$(this).dialog("close");}}});
 
  	default_chat_value = "Digite sua ação aqui!";
  	$("#chat").val(default_chat_value);

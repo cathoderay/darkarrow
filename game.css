@@ -21,6 +21,7 @@ html {
 	border-style: dashed;
 	border-width: 1;
 	background: url("images/archer.jpg") no-repeat 50% 50%;
+	background-size: 500 700;
 }
 
 #historia {
@@ -52,8 +53,8 @@ html {
 }
 
 #archer {
-	background: url("images/archer_mini.jpg");
-	background-size: 90 80;
+	background: url("images/archer_mini.jpg"); 
+	background-size: 75 60;
 	background-color: white;
 	border-width: 2;
 	border-color: #000;
