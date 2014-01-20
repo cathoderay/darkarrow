@@ -15,9 +15,9 @@ html {
 }
 
 #historiabar {
-	height: 500px;
 	color: #000;
 	height: 80%;
+	width: 100%;
 	border-style: dashed;
 	border-width: 1;
 	background: url("images/archer.jpg") no-repeat 50% 50%;
@@ -31,7 +31,35 @@ html {
 	color: #000;
 	user-select: none;
 	background-color: transparent;	
+
 }
+
+#inventario {
+	float: right;
+	width: 20%;
+	height: 100%;
+
+}
+
+#itens {
+	margin: 0 auto;
+	text-align: center;
+	border-width: 3;
+	border-color: #ccc;
+	border-style: solid;
+	background-color: #777;
+	border-radius: 10px;
+	border-spacing: 10;
+	padding: 10;
+}
+
+table td {
+	border-width: 3;
+	border-color: #ccc;
+	border-style: solid;
+	padding: 10;
+}
+
 
 #chatbar {
 	background-color: #ddd;
