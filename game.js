@@ -16,6 +16,7 @@ function copy(text) {
 }
 
 function andar(x, y, sentido){
+	// Testar limites do mapa
 	// 0 - Norte, 1 - Leste, 2 - Sul, 3 - Oeste
 	if (sentido == 0) {
 		return [x, y + 1];
